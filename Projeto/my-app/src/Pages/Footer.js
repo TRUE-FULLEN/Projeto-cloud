@@ -1,0 +1,7 @@
+function Footer() {
+  return (
+    <footer class="footer">
+      <p>&copy; 2023 My App. All rights reserved.</p>
+    </footer>
+  );
+}
