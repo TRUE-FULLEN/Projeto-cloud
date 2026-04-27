@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 
 function GameCard({ game }) {
-  const { addToCart, addToFavorites, favorites } = useContext(AppContext);
+  const { addToCart, addToFavorites, removeFromFavorites, favorites } = useContext(AppContext);
 
   const isFavorite = favorites.find(item => item.id === game.id);
 
@@ -43,7 +43,7 @@ function GameCard({ game }) {
         </button>
         <button
           className={`btn btn-sm ${isFavorite ? 'btn-danger' : 'btn-outline-danger'}`}
-          onClick={() => addToFavorites(game)}
+          onClick={() => isFavorite ? removeFromFavorites(game.id) : addToFavorites(game)}
         >
           ❤️
         </button>

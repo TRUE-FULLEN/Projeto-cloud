@@ -29,7 +29,7 @@ function Home() {
       {/* Secção Hero */}
       <div className="hero text-white text-center">
         <div className="container">
-          <h1 className="display-4 fw-bold">🎮 GameStore</h1>
+          <h1 className="display-4 fw-bold">🎮 Feira do Jogo</h1>
           <p className="lead">Os melhores jogos ao melhor preço</p>
           <form onSubmit={handleSearch} className="d-flex justify-content-center gap-2 mt-4">
             <input

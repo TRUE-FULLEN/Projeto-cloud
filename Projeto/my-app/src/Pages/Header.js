@@ -9,7 +9,7 @@ function Header() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <NavLink className="navbar-brand fw-bold" to="/">
-          🎮 GameStore
+          🎮 Feira do Jogo
         </NavLink>
 
         <button

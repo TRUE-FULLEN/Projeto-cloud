@@ -1,18 +1,20 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function LoginPage() {
   const [isLogin, setIsLogin] = useState(true);
+  const navigate = useNavigate();
   const [loginData, setLoginData] = useState({ email: '', password: '' });
   const [signupData, setSignupData] = useState({ name: '', email: '', password: '' });
 
   function handleLogin(e) {
     e.preventDefault();
-    alert(`Login efetuado com: ${loginData.email}`);
+    navigate('/');
   }
 
   function handleSignup(e) {
     e.preventDefault();
-    alert(`Conta criada para: ${signupData.email}`);
+    setIsLogin(true);
   }
 
   return (
