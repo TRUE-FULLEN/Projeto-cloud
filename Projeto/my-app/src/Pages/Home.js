@@ -8,10 +8,11 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:3030/games?featured=true')
+    fetch('http://localhost:3030/games')
       .then(response => response.json())
       .then(data => {
-        setFeaturedGames(data);
+        const destaque = data.filter(game => game.featured === true);
+        setFeaturedGames(destaque);
       })
       .catch(error => console.error('Erro ao carregar jogos:', error));
   }, []);
