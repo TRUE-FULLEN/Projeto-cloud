@@ -24,12 +24,12 @@
     },
     {
       "id": 3,
-      "title": "FIFA 24",
+      "title": "FIFA 26",
       "price": 39.99,
       "rating": 3,
       "genre": "Sports",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/2a9d8f/ffffff?text=FIFA+24",
+      "image": "https://placehold.co/400x220/2a9d8f/ffffff?text=FIFA+26",
       "description": "O jogo de futebol mais popular do mundo está de volta com novas funcionalidades.",
       "featured": false
     },
@@ -46,12 +46,12 @@
     },
     {
       "id": 5,
-      "title": "Call of Duty MW3",
+      "title": "Call of Duty: Black Ops 7",
       "price": 69.99,
       "rating": 4,
       "genre": "Shooter",
       "platform": "Xbox",
-      "image": "https://placehold.co/400x220/264653/ffffff?text=CoD+MW3",
+      "image": "https://placehold.co/400x220/264653/ffffff?text=CoD+OPS7",
       "description": "O próximo capítulo da icónica franchise Call of Duty com novas missões e modos multijogador.",
       "featured": false
     },
@@ -90,23 +90,23 @@
     },
     {
       "id": 9,
-      "title": "NBA 2K24",
+      "title": "NBA 2K26",
       "price": 34.99,
       "rating": 3,
       "genre": "Sports",
       "platform": "Xbox",
-      "image": "https://placehold.co/400x220/2a9d8f/ffffff?text=NBA+2K24",
+      "image": "https://placehold.co/400x220/2a9d8f/ffffff?text=NBA+2K26",
       "description": "A experiência de basquetebol mais completa com gráficos realistas e modos de jogo variados.",
       "featured": false
     },
     {
       "id": 10,
-      "title": "Halo Infinite",
+      "title": "Halo 4",
       "price": 29.99,
       "rating": 4,
       "genre": "Shooter",
       "platform": "Xbox",
-      "image": "https://placehold.co/400x220/264653/ffffff?text=Halo+Infinite",
+      "image": "https://placehold.co/400x220/264653/ffffff?text=Halo+4",
       "description": "Master Chief regressa num novo capítulo emocionante da saga Halo com mundo aberto.",
       "featured": false
     },
@@ -134,17 +134,6 @@
     },
     {
       "id": 13,
-      "title": "Counter-Strike 2",
-      "price": 0,
-      "rating": 4,
-      "genre": "Shooter",
-      "platform": "PC",
-      "image": "https://placehold.co/400x220/264653/ffffff?text=CS2",
-      "description": "O shooter tático mais jogado do mundo regressa com gráficos melhorados e novo motor.",
-      "featured": true
-    },
-    {
-      "id": 14,
       "title": "Cyberpunk 2077",
       "price": 29.99,
       "rating": 4,
@@ -155,7 +144,7 @@
       "featured": true
     },
     {
-      "id": 15,
+      "id": 14,
       "title": "Minecraft",
       "price": 19.99,
       "rating": 5,
@@ -166,7 +155,7 @@
       "featured": false
     },
     {
-      "id": 16,
+      "id": 15,
       "title": "The Witcher 3",
       "price": 14.99,
       "rating": 5,
@@ -177,7 +166,7 @@
       "featured": false
     },
     {
-      "id": 17,
+      "id": 16,
       "title": "GTA V",
       "price": 24.99,
       "rating": 4,
@@ -188,7 +177,7 @@
       "featured": false
     },
     {
-      "id": 18,
+      "id": 17,
       "title": "Starfield",
       "price": 49.99,
       "rating": 4,
@@ -199,7 +188,7 @@
       "featured": false
     },
     {
-      "id": 19,
+      "id": 18,
       "title": "Hollow Knight",
       "price": 9.99,
       "rating": 5,
@@ -210,7 +199,7 @@
       "featured": false
     },
     {
-      "id": 20,
+      "id": 19,
       "title": "Terraria",
       "price": 9.99,
       "rating": 5,
@@ -221,7 +210,7 @@
       "featured": false
     },
     {
-      "id": 21,
+      "id": 20,
       "title": "Half-Life: Alyx",
       "price": 34.99,
       "rating": 5,
@@ -232,7 +221,7 @@
       "featured": false
     },
     {
-      "id": 22,
+      "id": 21,
       "title": "Stardew Valley",
       "price": 9.99,
       "rating": 5,
@@ -243,7 +232,7 @@
       "featured": false
     },
     {
-      "id": 23,
+      "id": 22,
       "title": "Portal 2",
       "price": 7.99,
       "rating": 5,
@@ -254,7 +243,7 @@
       "featured": false
     },
     {
-      "id": 24,
+      "id": 23,
       "title": "Disco Elysium",
       "price": 19.99,
       "rating": 5,
@@ -265,18 +254,18 @@
       "featured": false
     },
     {
-      "id": 25,
-      "title": "Football Manager 2024",
+      "id": 24,
+      "title": "Football Manager 2026",
       "price": 29.99,
       "rating": 4,
       "genre": "Sports",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/2a9d8f/ffffff?text=FM+2024",
+      "image": "https://placehold.co/400x220/2a9d8f/ffffff?text=FM+2026",
       "description": "O simulador de gestão de futebol mais completo e realista do mercado.",
       "featured": false
     },
     {
-      "id": 26,
+      "id": 25,
       "title": "Total War: Warhammer III",
       "price": 39.99,
       "rating": 4,
