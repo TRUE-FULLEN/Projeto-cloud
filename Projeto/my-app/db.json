@@ -131,6 +131,160 @@
       "image": "https://placehold.co/400x220/6d6875/ffffff?text=AoE+IV",
       "description": "Um dos jogos de estratégia em tempo real mais amados da história regressa com novo fôlego.",
       "featured": false
+    },
+    {
+      "id": 13,
+      "title": "Counter-Strike 2",
+      "price": 0,
+      "rating": 4,
+      "genre": "Shooter",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/264653/ffffff?text=CS2",
+      "description": "O shooter tático mais jogado do mundo regressa com gráficos melhorados e novo motor.",
+      "featured": true
+    },
+    {
+      "id": 14,
+      "title": "Cyberpunk 2077",
+      "price": 29.99,
+      "rating": 4,
+      "genre": "RPG",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/457b9d/ffffff?text=Cyberpunk",
+      "description": "Mundo aberto futurista em Night City onde jogas como V, um mercenário em busca de imortalidade.",
+      "featured": true
+    },
+    {
+      "id": 15,
+      "title": "Minecraft",
+      "price": 19.99,
+      "rating": 5,
+      "genre": "Adventure",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/e9c46a/000000?text=Minecraft",
+      "description": "Constrói, explora e sobrevive num mundo gerado aleatoriamente com blocos infinitos.",
+      "featured": false
+    },
+    {
+      "id": 16,
+      "title": "The Witcher 3",
+      "price": 14.99,
+      "rating": 5,
+      "genre": "RPG",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/457b9d/ffffff?text=Witcher+3",
+      "description": "Geralt de Rívia parte à procura da sua filha adotiva numa aventura épica de mundo aberto.",
+      "featured": false
+    },
+    {
+      "id": 17,
+      "title": "GTA V",
+      "price": 24.99,
+      "rating": 4,
+      "genre": "Action",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/e63946/ffffff?text=GTA+V",
+      "description": "Explora a enorme cidade de Los Santos em uma das histórias mais épicas de crime já criadas.",
+      "featured": false
+    },
+    {
+      "id": 18,
+      "title": "Starfield",
+      "price": 49.99,
+      "rating": 4,
+      "genre": "RPG",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/457b9d/ffffff?text=Starfield",
+      "description": "Explora o espaço e mais de 1000 planetas na primeira nova IP da Bethesda em 25 anos.",
+      "featured": false
+    },
+    {
+      "id": 19,
+      "title": "Hollow Knight",
+      "price": 9.99,
+      "rating": 5,
+      "genre": "Adventure",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/e9c46a/000000?text=Hollow+Knight",
+      "description": "Explora um vasto reino subterrâneo de insetos neste desafiante jogo de ação e aventura.",
+      "featured": false
+    },
+    {
+      "id": 20,
+      "title": "Terraria",
+      "price": 9.99,
+      "rating": 5,
+      "genre": "Adventure",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/e9c46a/000000?text=Terraria",
+      "description": "Escava, constrói e luta neste clássico jogo de aventura 2D com conteúdo quase infinito.",
+      "featured": false
+    },
+    {
+      "id": 21,
+      "title": "Half-Life: Alyx",
+      "price": 34.99,
+      "rating": 5,
+      "genre": "Shooter",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/264653/ffffff?text=HL+Alyx",
+      "description": "A experiência VR definitiva. Alyx Vance luta pela sobrevivência da humanidade contra os Combine.",
+      "featured": false
+    },
+    {
+      "id": 22,
+      "title": "Stardew Valley",
+      "price": 9.99,
+      "rating": 5,
+      "genre": "Strategy",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/6d6875/ffffff?text=Stardew",
+      "description": "Herda uma quinta e transforma-a num próspero negócio enquanto te integras na comunidade local.",
+      "featured": false
+    },
+    {
+      "id": 23,
+      "title": "Portal 2",
+      "price": 7.99,
+      "rating": 5,
+      "genre": "Action",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/e63946/ffffff?text=Portal+2",
+      "description": "Resolve puzzles físicos com uma pistola de portais neste aclamado jogo de lógica da Valve.",
+      "featured": false
+    },
+    {
+      "id": 24,
+      "title": "Disco Elysium",
+      "price": 19.99,
+      "rating": 5,
+      "genre": "RPG",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/457b9d/ffffff?text=Disco+Elysium",
+      "description": "Um RPG policial único onde interpretas um detetive com amnésia numa cidade em decadência.",
+      "featured": false
+    },
+    {
+      "id": 25,
+      "title": "Football Manager 2024",
+      "price": 29.99,
+      "rating": 4,
+      "genre": "Sports",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/2a9d8f/ffffff?text=FM+2024",
+      "description": "O simulador de gestão de futebol mais completo e realista do mercado.",
+      "featured": false
+    },
+    {
+      "id": 26,
+      "title": "Total War: Warhammer III",
+      "price": 39.99,
+      "rating": 4,
+      "genre": "Strategy",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/6d6875/ffffff?text=Total+War",
+      "description": "Comanda exércitos fantásticos em batalhas épicas no universo Warhammer Fantasy.",
+      "featured": false
     }
   ]
 }

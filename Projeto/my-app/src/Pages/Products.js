@@ -6,9 +6,10 @@ function Products() {
   const [games, setGames] = useState([]);
   const [filteredGames, setFilteredGames] = useState([]);
   const [genre, setGenre] = useState('');
+  const [platform, setPlatform] = useState('PC');
   const [sortBy, setSortBy] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const gamesPerPage = 6;
+  const gamesPerPage = 8;
 
   const location = useLocation();
   const searchParam = new URLSearchParams(location.search).get('search') || '';
@@ -31,6 +32,10 @@ function Products() {
       );
     }
 
+    if (platform) {
+      result = result.filter(game => game.platform === platform);
+    }
+
     if (genre) {
       result = result.filter(game => game.genre === genre);
     }
@@ -43,7 +48,7 @@ function Products() {
 
     setFilteredGames(result);
     setCurrentPage(1);
-  }, [games, genre, sortBy, searchParam]);
+  }, [games, genre, platform, sortBy, searchParam]);
 
   const totalPages = Math.ceil(filteredGames.length / gamesPerPage);
   const startIndex = (currentPage - 1) * gamesPerPage;
@@ -57,7 +62,20 @@ function Products() {
 
       {/* Filtros */}
       <div className="row mb-4 g-3">
-        <div className="col-12 col-md-4">
+        <div className="col-12 col-md-3">
+          <select
+            className="form-select bg-dark text-white border-secondary"
+            value={platform}
+            onChange={(e) => setPlatform(e.target.value)}
+          >
+            <option value="">Todas as plataformas</option>
+            <option value="PC">PC</option>
+            <option value="PlayStation">PlayStation</option>
+            <option value="Xbox">Xbox</option>
+            <option value="Nintendo">Nintendo</option>
+          </select>
+        </div>
+        <div className="col-12 col-md-3">
           <select
             className="form-select bg-dark text-white border-secondary"
             value={genre}
@@ -69,7 +87,7 @@ function Products() {
             ))}
           </select>
         </div>
-        <div className="col-12 col-md-4">
+        <div className="col-12 col-md-3">
           <select
             className="form-select bg-dark text-white border-secondary"
             value={sortBy}
