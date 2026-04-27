@@ -1,0 +1,136 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "God of War Ragnarök",
+      "price": 59.99,
+      "rating": 5,
+      "genre": "Action",
+      "platform": "PlayStation",
+      "image": "https://placehold.co/400x220/e63946/ffffff?text=God+of+War",
+      "description": "Kratos e Atreus embarcam numa épica jornada pelos Nove Reinos enquanto enfrentam os deuses nórdicos.",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Elden Ring",
+      "price": 49.99,
+      "rating": 5,
+      "genre": "RPG",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/457b9d/ffffff?text=Elden+Ring",
+      "description": "Um RPG de mundo aberto desenvolvido pela FromSoftware em colaboração com George R.R. Martin.",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "FIFA 24",
+      "price": 39.99,
+      "rating": 3,
+      "genre": "Sports",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/2a9d8f/ffffff?text=FIFA+24",
+      "description": "O jogo de futebol mais popular do mundo está de volta com novas funcionalidades.",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "The Legend of Zelda",
+      "price": 59.99,
+      "rating": 5,
+      "genre": "Adventure",
+      "platform": "Nintendo",
+      "image": "https://placehold.co/400x220/e9c46a/000000?text=Zelda",
+      "description": "Link embarca numa nova aventura no reino de Hyrule, explorando um vasto mundo aberto.",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "title": "Call of Duty MW3",
+      "price": 69.99,
+      "rating": 4,
+      "genre": "Shooter",
+      "platform": "Xbox",
+      "image": "https://placehold.co/400x220/264653/ffffff?text=CoD+MW3",
+      "description": "O próximo capítulo da icónica franchise Call of Duty com novas missões e modos multijogador.",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Civilization VII",
+      "price": 44.99,
+      "rating": 4,
+      "genre": "Strategy",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/6d6875/ffffff?text=Civ+VII",
+      "description": "Constrói um império capaz de resistir ao teste do tempo nesta aclamada série de estratégia.",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "title": "Spider-Man 2",
+      "price": 69.99,
+      "rating": 5,
+      "genre": "Action",
+      "platform": "PlayStation",
+      "image": "https://placehold.co/400x220/e63946/ffffff?text=Spider-Man+2",
+      "description": "Peter Parker e Miles Morales enfrentam o seu maior desafio enquanto protegem Nova Iorque.",
+      "featured": true
+    },
+    {
+      "id": 8,
+      "title": "Baldur's Gate 3",
+      "price": 59.99,
+      "rating": 5,
+      "genre": "RPG",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/457b9d/ffffff?text=BG3",
+      "description": "Uma épica aventura RPG baseada em Dungeons & Dragons com escolhas que moldam o mundo.",
+      "featured": true
+    },
+    {
+      "id": 9,
+      "title": "NBA 2K24",
+      "price": 34.99,
+      "rating": 3,
+      "genre": "Sports",
+      "platform": "Xbox",
+      "image": "https://placehold.co/400x220/2a9d8f/ffffff?text=NBA+2K24",
+      "description": "A experiência de basquetebol mais completa com gráficos realistas e modos de jogo variados.",
+      "featured": false
+    },
+    {
+      "id": 10,
+      "title": "Halo Infinite",
+      "price": 29.99,
+      "rating": 4,
+      "genre": "Shooter",
+      "platform": "Xbox",
+      "image": "https://placehold.co/400x220/264653/ffffff?text=Halo+Infinite",
+      "description": "Master Chief regressa num novo capítulo emocionante da saga Halo com mundo aberto.",
+      "featured": false
+    },
+    {
+      "id": 11,
+      "title": "Red Dead Redemption 2",
+      "price": 39.99,
+      "rating": 5,
+      "genre": "Adventure",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/e9c46a/000000?text=RDR2",
+      "description": "Uma épica história de vida na América selvagem do século XIX com detalhe sem precedentes.",
+      "featured": true
+    },
+    {
+      "id": 12,
+      "title": "Age of Empires IV",
+      "price": 49.99,
+      "rating": 4,
+      "genre": "Strategy",
+      "platform": "PC",
+      "image": "https://placehold.co/400x220/6d6875/ffffff?text=AoE+IV",
+      "description": "Um dos jogos de estratégia em tempo real mais amados da história regressa com novo fôlego.",
+      "featured": false
+    }
+  ]
+}
