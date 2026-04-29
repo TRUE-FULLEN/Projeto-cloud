@@ -128,7 +128,7 @@
       "rating": 4,
       "genre": "Strategy",
       "platform": "PC",
-      "image": "/ImagensJogos/EldenRing.jpg",
+      "image": "/ImagensJogos/age of empires.png",
       "description": "Um dos jogos de estratégia em tempo real mais amados da história regressa com novo fôlego.",
       "featured": false
     },
@@ -161,7 +161,7 @@
       "rating": 5,
       "genre": "RPG",
       "platform": "PC",
-      "image": "/ImagensJogos/EldenRing.jpg",
+      "image": "/ImagensJogos/the witcher.png",
       "description": "Geralt de Rívia parte à procura da sua filha adotiva numa aventura épica de mundo aberto.",
       "featured": false
     },

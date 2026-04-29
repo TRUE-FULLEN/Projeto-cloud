@@ -23,3 +23,11 @@ main {
 .stars {
   color: #ffd700;
 }
+
+.card-img-top {
+  height: 175px; 
+  object-fit: contain; /* A magia que faz a imagem aparecer toda! */
+  object-position: center;
+  background-color: #212529; /* Dica: Adiciona uma cor de fundo escura para preencher o espaço vazio que vai sobrar nas laterais das imagens mais estreitas */
+  padding: 1px; /* Opcional: dá uma pequena margem para a imagem "respirar" dentro do cartão */
+}
