@@ -7,7 +7,7 @@
       "rating": 5,
       "genre": "Action",
       "platform": "PlayStation",
-      "image": "https://cdn.akamai.steamstatic.com/steam/apps/2322010/header.jpg",
+      "image": "/ImagensJogos/GodOfWar.jpg",
       "description": "Kratos e Atreus embarcam numa épica jornada pelos Nove Reinos enquanto enfrentam os deuses nórdicos.",
       "featured": true
     },
@@ -18,7 +18,7 @@
       "rating": 5,
       "genre": "RPG",
       "platform": "PC",
-      "image": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg",
+      "image": "/ImagensJogos/EldenRing.jpg",
       "description": "Um RPG de mundo aberto desenvolvido pela FromSoftware em colaboração com George R.R. Martin.",
       "featured": true
     },
@@ -29,7 +29,7 @@
       "rating": 3,
       "genre": "Sports",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/2a9d8f/ffffff?text=FIFA+26",
+      "image": "https://placehold.co/400x220/2a9d8f/ffffff?text=FIFA+26", 
       "description": "O jogo de futebol mais popular do mundo está de volta com novas funcionalidades.",
       "featured": false
     },
@@ -40,7 +40,7 @@
       "rating": 5,
       "genre": "Adventure",
       "platform": "Nintendo",
-      "image": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000063714/a82b43e8b1e5e0e432e41f67c73b9c5ec7fe5e1ffe55ddbb53f8b72f3ebaa48b",
+      "image": "/ImagensJogos/Zelda.png",
       "description": "Link embarca numa nova aventura no reino de Hyrule, explorando um vasto mundo aberto.",
       "featured": true
     },
@@ -73,7 +73,7 @@
       "rating": 5,
       "genre": "Action",
       "platform": "PlayStation",
-      "image": "https://placehold.co/400x220/e63946/ffffff?text=Spider-Man+2",
+      "image": "/ImagensJogos/SpiderMan2.png",
       "description": "Peter Parker e Miles Morales enfrentam o seu maior desafio enquanto protegem Nova Iorque.",
       "featured": true
     },
@@ -84,7 +84,7 @@
       "rating": 5,
       "genre": "RPG",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/457b9d/ffffff?text=BG3",
+      "image": "/ImagensJogos/BG3.jpg",
       "description": "Uma épica aventura RPG baseada em Dungeons & Dragons com escolhas que moldam o mundo.",
       "featured": true
     },
@@ -117,7 +117,7 @@
       "rating": 5,
       "genre": "Adventure",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/e9c46a/000000?text=RDR2",
+      "image": "/ImagensJogos/RDR2.jpg",
       "description": "Uma épica história de vida na América selvagem do século XIX com detalhe sem precedentes.",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "rating": 4,
       "genre": "RPG",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/457b9d/ffffff?text=Cyberpunk",
+      "image": "/ImagensJogos/Cyberpunk.png",
       "description": "Mundo aberto futurista em Night City onde jogas como V, um mercenário em busca de imortalidade.",
       "featured": true
     },
@@ -277,4 +277,4 @@
     }
   ]
 }
-a
+
