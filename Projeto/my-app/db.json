@@ -29,7 +29,7 @@
       "rating": 3,
       "genre": "Sports",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/2a9d8f/ffffff?text=FIFA+26", 
+      "image": "/ImagensJogos/fifa.png", 
       "description": "O jogo de futebol mais popular do mundo está de volta com novas funcionalidades.",
       "featured": false
     },
@@ -51,7 +51,7 @@
       "rating": 4,
       "genre": "Shooter",
       "platform": "Xbox",
-      "image": "https://placehold.co/400x220/264653/ffffff?text=CoD+OPS7",
+      "image": "/ImagensJogos/COD black ops.png",
       "description": "O próximo capítulo da icónica franchise Call of Duty com novas missões e modos multijogador.",
       "featured": false
     },
@@ -62,7 +62,7 @@
       "rating": 4,
       "genre": "Strategy",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/6d6875/ffffff?text=Civ+VII",
+      "image": "/ImagensJogos/civilization.png",
       "description": "Constrói um império capaz de resistir ao teste do tempo nesta aclamada série de estratégia.",
       "featured": false
     },
@@ -95,7 +95,7 @@
       "rating": 3,
       "genre": "Sports",
       "platform": "Xbox",
-      "image": "https://placehold.co/400x220/2a9d8f/ffffff?text=NBA+2K26",
+      "image": "/ImagensJogos/nba 2k.png",
       "description": "A experiência de basquetebol mais completa com gráficos realistas e modos de jogo variados.",
       "featured": false
     },
@@ -106,7 +106,7 @@
       "rating": 4,
       "genre": "Shooter",
       "platform": "Xbox",
-      "image": "https://placehold.co/400x220/264653/ffffff?text=Halo+4",
+      "image": "/ImagensJogos/halo 4.png",
       "description": "Master Chief regressa num novo capítulo emocionante da saga Halo com mundo aberto.",
       "featured": false
     },
@@ -128,7 +128,7 @@
       "rating": 4,
       "genre": "Strategy",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/6d6875/ffffff?text=AoE+IV",
+      "image": "/ImagensJogos/EldenRing.jpg",
       "description": "Um dos jogos de estratégia em tempo real mais amados da história regressa com novo fôlego.",
       "featured": false
     },
@@ -150,7 +150,7 @@
       "rating": 5,
       "genre": "Adventure",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/e9c46a/000000?text=Minecraft",
+      "image": "/ImagensJogos/minecraft.png",
       "description": "Constrói, explora e sobrevive num mundo gerado aleatoriamente com blocos infinitos.",
       "featured": false
     },
@@ -161,7 +161,7 @@
       "rating": 5,
       "genre": "RPG",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/457b9d/ffffff?text=Witcher+3",
+      "image": "/ImagensJogos/EldenRing.jpg",
       "description": "Geralt de Rívia parte à procura da sua filha adotiva numa aventura épica de mundo aberto.",
       "featured": false
     },
@@ -172,7 +172,7 @@
       "rating": 4,
       "genre": "Action",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/e63946/ffffff?text=GTA+V",
+      "image": "/ImagensJogos/gta zorlak.png",
       "description": "Explora a enorme cidade de Los Santos em uma das histórias mais épicas de crime já criadas.",
       "featured": false
     },
@@ -183,7 +183,7 @@
       "rating": 4,
       "genre": "RPG",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/457b9d/ffffff?text=Starfield",
+      "image": "/ImagensJogos/starfield.png",
       "description": "Explora o espaço e mais de 1000 planetas na primeira nova IP da Bethesda em 25 anos.",
       "featured": false
     },
@@ -194,7 +194,7 @@
       "rating": 5,
       "genre": "Adventure",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/e9c46a/000000?text=Hollow+Knight",
+      "image": "/ImagensJogos/hollow knight.png",
       "description": "Explora um vasto reino subterrâneo de insetos neste desafiante jogo de ação e aventura.",
       "featured": false
     },
@@ -205,7 +205,7 @@
       "rating": 5,
       "genre": "Adventure",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/e9c46a/000000?text=Terraria",
+      "image": "/ImagensJogos/terraria.png",
       "description": "Escava, constrói e luta neste clássico jogo de aventura 2D com conteúdo quase infinito.",
       "featured": false
     },
@@ -216,7 +216,7 @@
       "rating": 5,
       "genre": "Shooter",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/264653/ffffff?text=HL+Alyx",
+      "image": "/ImagensJogos/alyx.png",
       "description": "A experiência VR definitiva. Alyx Vance luta pela sobrevivência da humanidade contra os Combine.",
       "featured": false
     },
@@ -227,7 +227,7 @@
       "rating": 5,
       "genre": "Strategy",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/6d6875/ffffff?text=Stardew",
+      "image": "/ImagensJogos/starview valley.png",
       "description": "Herda uma quinta e transforma-a num próspero negócio enquanto te integras na comunidade local.",
       "featured": false
     },
@@ -238,7 +238,7 @@
       "rating": 5,
       "genre": "Action",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/e63946/ffffff?text=Portal+2",
+      "image": "/ImagensJogos/portal 26.png",
       "description": "Resolve puzzles físicos com uma pistola de portais neste aclamado jogo de lógica da Valve.",
       "featured": false
     },
@@ -249,7 +249,7 @@
       "rating": 5,
       "genre": "RPG",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/457b9d/ffffff?text=Disco+Elysium",
+      "image": "/ImagensJogos/disco elysum.png",
       "description": "Um RPG policial único onde interpretas um detetive com amnésia numa cidade em decadência.",
       "featured": false
     },
@@ -260,7 +260,7 @@
       "rating": 4,
       "genre": "Sports",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/2a9d8f/ffffff?text=FM+2026",
+      "image": "/ImagensJogos/fm26.png",
       "description": "O simulador de gestão de futebol mais completo e realista do mercado.",
       "featured": false
     },
@@ -271,7 +271,7 @@
       "rating": 4,
       "genre": "Strategy",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/6d6875/ffffff?text=Total+War",
+      "image": "/ImagensJogos/total-war-warhammer-3.png",
       "description": "Comanda exércitos fantásticos em batalhas épicas no universo Warhammer Fantasy.",
       "featured": false
     }
