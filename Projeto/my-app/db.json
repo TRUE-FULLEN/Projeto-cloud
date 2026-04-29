@@ -7,7 +7,7 @@
       "rating": 5,
       "genre": "Action",
       "platform": "PlayStation",
-      "image": "https://placehold.co/400x220/e63946/ffffff?text=God+of+War",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/2322010/header.jpg",
       "description": "Kratos e Atreus embarcam numa épica jornada pelos Nove Reinos enquanto enfrentam os deuses nórdicos.",
       "featured": true
     },
@@ -18,7 +18,7 @@
       "rating": 5,
       "genre": "RPG",
       "platform": "PC",
-      "image": "https://placehold.co/400x220/457b9d/ffffff?text=Elden+Ring",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg",
       "description": "Um RPG de mundo aberto desenvolvido pela FromSoftware em colaboração com George R.R. Martin.",
       "featured": true
     },
@@ -40,7 +40,7 @@
       "rating": 5,
       "genre": "Adventure",
       "platform": "Nintendo",
-      "image": "https://placehold.co/400x220/e9c46a/000000?text=Zelda",
+      "image": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000063714/a82b43e8b1e5e0e432e41f67c73b9c5ec7fe5e1ffe55ddbb53f8b72f3ebaa48b",
       "description": "Link embarca numa nova aventura no reino de Hyrule, explorando um vasto mundo aberto.",
       "featured": true
     },
