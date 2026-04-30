@@ -1,18 +1,18 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { AppContext } from '../context/AppContext';
 
 function LoginPage() {
   const [loginData, setLoginData] = useState({ email: '', password: '' });
   const [erro, setErro] = useState('');
   const navigate = useNavigate();
+  const { login } = useContext(AppContext);
 
   function handleLogin(e) {
     e.preventDefault();
 
-    // Vai buscar os utilizadores guardados no localStorage
     const users = JSON.parse(localStorage.getItem('users')) || [];
 
-    // Verifica se existe um utilizador com esse email e password
     const user = users.find(
       u => u.email === loginData.email && u.password === loginData.password
     );
@@ -22,10 +22,7 @@ function LoginPage() {
       return;
     }
 
-    // Guarda a sessão do utilizador
-    localStorage.setItem('loggedUser', JSON.stringify(user));
-
-    // Vai para a home page
+    login(user);
     navigate('/');
   }
 

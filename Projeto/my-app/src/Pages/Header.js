@@ -1,20 +1,13 @@
-import { useContext, useState, useEffect } from 'react';
+import { useContext } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 
 function Header() {
-  const { cart, favorites } = useContext(AppContext);
-  const [loggedUser, setLoggedUser] = useState(null);
+  const { cart, favorites, loggedUser, logout } = useContext(AppContext);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const user = JSON.parse(localStorage.getItem('loggedUser'));
-    setLoggedUser(user);
-  }, []);
-
   function handleLogout() {
-    localStorage.removeItem('loggedUser');
-    setLoggedUser(null);
+    logout();
     navigate('/');
   }
 
