@@ -7,7 +7,7 @@
       "rating": 5,
       "genre": "Action",
       "platform": "PlayStation",
-      "image": "/ImagensJogos/GodOfWar.jpg",
+      "image": "/ImagensJogos/god-of-war-ragnarok.jpg",
       "description": "Kratos e Atreus embarcam numa épica jornada pelos Nove Reinos enquanto enfrentam os deuses nórdicos.",
       "featured": true
     },
@@ -18,29 +18,29 @@
       "rating": 5,
       "genre": "RPG",
       "platform": "PC",
-      "image": "/ImagensJogos/EldenRing.jpg",
+      "image": "/ImagensJogos/elden-ring.jpg",
       "description": "Um RPG de mundo aberto desenvolvido pela FromSoftware em colaboração com George R.R. Martin.",
       "featured": true
     },
     {
       "id": 3,
-      "title": "FIFA 26",
+      "title": "FC 26",
       "price": 39.99,
       "rating": 3,
       "genre": "Sports",
       "platform": "PC",
-      "image": "/ImagensJogos/fifa.png", 
+      "image": "/ImagensJogos/fc-26.jpg", 
       "description": "O jogo de futebol mais popular do mundo está de volta com novas funcionalidades.",
       "featured": false
     },
     {
       "id": 4,
-      "title": "The Legend of Zelda",
+      "title": "The Legend of Zelda: Breath of the Wild",
       "price": 59.99,
       "rating": 5,
       "genre": "Adventure",
       "platform": "Nintendo",
-      "image": "/ImagensJogos/Zelda.png",
+      "image": "/ImagensJogos/the-legend-of-zelda-breath-of-the-wild.jpg",
       "description": "Link embarca numa nova aventura no reino de Hyrule, explorando um vasto mundo aberto.",
       "featured": true
     },
@@ -51,7 +51,7 @@
       "rating": 4,
       "genre": "Shooter",
       "platform": "Xbox",
-      "image": "/ImagensJogos/COD black ops.png",
+      "image": "/ImagensJogos/call-of-duty-black-ops-7.jpg",
       "description": "O próximo capítulo da icónica franchise Call of Duty com novas missões e modos multijogador.",
       "featured": false
     },
@@ -62,7 +62,7 @@
       "rating": 4,
       "genre": "Strategy",
       "platform": "PC",
-      "image": "/ImagensJogos/civilization.png",
+      "image": "/ImagensJogos/civilization-vii-.jpg",
       "description": "Constrói um império capaz de resistir ao teste do tempo nesta aclamada série de estratégia.",
       "featured": false
     },
@@ -73,7 +73,7 @@
       "rating": 5,
       "genre": "Action",
       "platform": "PlayStation",
-      "image": "/ImagensJogos/SpiderMan2.png",
+      "image": "/ImagensJogos/spider-man-2.jpg",
       "description": "Peter Parker e Miles Morales enfrentam o seu maior desafio enquanto protegem Nova Iorque.",
       "featured": true
     },
@@ -84,7 +84,7 @@
       "rating": 5,
       "genre": "RPG",
       "platform": "PC",
-      "image": "/ImagensJogos/BG3.jpg",
+      "image": "/ImagensJogos/baldur-s-gate-3.jpg",
       "description": "Uma épica aventura RPG baseada em Dungeons & Dragons com escolhas que moldam o mundo.",
       "featured": true
     },
@@ -95,7 +95,7 @@
       "rating": 3,
       "genre": "Sports",
       "platform": "Xbox",
-      "image": "/ImagensJogos/nba 2k.png",
+      "image": "/ImagensJogos/nba-2k26.jpg",
       "description": "A experiência de basquetebol mais completa com gráficos realistas e modos de jogo variados.",
       "featured": false
     },
@@ -106,7 +106,7 @@
       "rating": 4,
       "genre": "Shooter",
       "platform": "Xbox",
-      "image": "/ImagensJogos/halo 4.png",
+      "image": "/ImagensJogos/halo-4.jpg",
       "description": "Master Chief regressa num novo capítulo emocionante da saga Halo com mundo aberto.",
       "featured": false
     },
@@ -117,7 +117,7 @@
       "rating": 5,
       "genre": "Adventure",
       "platform": "PC",
-      "image": "/ImagensJogos/RDR2.jpg",
+      "image": "/ImagensJogos/red-dead-redemption-2.jpg",
       "description": "Uma épica história de vida na América selvagem do século XIX com detalhe sem precedentes.",
       "featured": true
     },
@@ -128,7 +128,7 @@
       "rating": 4,
       "genre": "Strategy",
       "platform": "PC",
-      "image": "/ImagensJogos/age of empires.png",
+      "image": "/ImagensJogos/age-of-empires-iv.jpg",
       "description": "Um dos jogos de estratégia em tempo real mais amados da história regressa com novo fôlego.",
       "featured": false
     },
@@ -139,7 +139,7 @@
       "rating": 4,
       "genre": "RPG",
       "platform": "PC",
-      "image": "/ImagensJogos/Cyberpunk.png",
+      "image": "/ImagensJogos/cyberpunk-2077.jpg",
       "description": "Mundo aberto futurista em Night City onde jogas como V, um mercenário em busca de imortalidade.",
       "featured": true
     },
@@ -150,7 +150,7 @@
       "rating": 5,
       "genre": "Adventure",
       "platform": "PC",
-      "image": "/ImagensJogos/minecraft.png",
+      "image": "/ImagensJogos/minecraft.jpg",
       "description": "Constrói, explora e sobrevive num mundo gerado aleatoriamente com blocos infinitos.",
       "featured": false
     },
@@ -161,7 +161,7 @@
       "rating": 5,
       "genre": "RPG",
       "platform": "PC",
-      "image": "/ImagensJogos/the witcher.png",
+      "image": "/ImagensJogos/the-witcher-3.jpg",
       "description": "Geralt de Rívia parte à procura da sua filha adotiva numa aventura épica de mundo aberto.",
       "featured": false
     },
@@ -172,7 +172,7 @@
       "rating": 4,
       "genre": "Action",
       "platform": "PC",
-      "image": "/ImagensJogos/gta zorlak.png",
+      "image": "/ImagensJogos/grand-theft-auto-v.jpg",
       "description": "Explora a enorme cidade de Los Santos em uma das histórias mais épicas de crime já criadas.",
       "featured": false
     },
@@ -183,7 +183,7 @@
       "rating": 4,
       "genre": "RPG",
       "platform": "PC",
-      "image": "/ImagensJogos/starfield.png",
+      "image": "/ImagensJogos/starfield.jpg",
       "description": "Explora o espaço e mais de 1000 planetas na primeira nova IP da Bethesda em 25 anos.",
       "featured": false
     },
@@ -194,7 +194,7 @@
       "rating": 5,
       "genre": "Adventure",
       "platform": "PC",
-      "image": "/ImagensJogos/hollow knight.png",
+      "image": "/ImagensJogos/hollow-knight.jpg",
       "description": "Explora um vasto reino subterrâneo de insetos neste desafiante jogo de ação e aventura.",
       "featured": false
     },
@@ -205,18 +205,18 @@
       "rating": 5,
       "genre": "Adventure",
       "platform": "PC",
-      "image": "/ImagensJogos/terraria.png",
+      "image": "/ImagensJogos/terraria-.jpg",
       "description": "Escava, constrói e luta neste clássico jogo de aventura 2D com conteúdo quase infinito.",
       "featured": false
     },
     {
       "id": 20,
-      "title": "Half-Life: Alyx",
+      "title": "Half-Life: Alyx VR",
       "price": 34.99,
       "rating": 5,
       "genre": "Shooter",
       "platform": "PC",
-      "image": "/ImagensJogos/alyx.png",
+      "image": "/ImagensJogos/half-life-alyx-vr.jpg",
       "description": "A experiência VR definitiva. Alyx Vance luta pela sobrevivência da humanidade contra os Combine.",
       "featured": false
     },
@@ -227,7 +227,7 @@
       "rating": 5,
       "genre": "Strategy",
       "platform": "PC",
-      "image": "/ImagensJogos/starview valley.png",
+      "image": "/ImagensJogos/stardew-valley.jpg",
       "description": "Herda uma quinta e transforma-a num próspero negócio enquanto te integras na comunidade local.",
       "featured": false
     },
@@ -238,7 +238,7 @@
       "rating": 5,
       "genre": "Action",
       "platform": "PC",
-      "image": "/ImagensJogos/portal 26.png",
+      "image": "/ImagensJogos/portal-2.jpg",
       "description": "Resolve puzzles físicos com uma pistola de portais neste aclamado jogo de lógica da Valve.",
       "featured": false
     },
@@ -249,7 +249,7 @@
       "rating": 5,
       "genre": "RPG",
       "platform": "PC",
-      "image": "/ImagensJogos/disco elysum.png",
+      "image": "/ImagensJogos/disco-elysium.jpg",
       "description": "Um RPG policial único onde interpretas um detetive com amnésia numa cidade em decadência.",
       "featured": false
     },
@@ -260,7 +260,7 @@
       "rating": 4,
       "genre": "Sports",
       "platform": "PC",
-      "image": "/ImagensJogos/fm26.png",
+      "image": "/ImagensJogos/football-manager-26.jpg",
       "description": "O simulador de gestão de futebol mais completo e realista do mercado.",
       "featured": false
     },
@@ -271,7 +271,7 @@
       "rating": 4,
       "genre": "Strategy",
       "platform": "PC",
-      "image": "/ImagensJogos/total-war-warhammer-3.png",
+      "image": "/ImagensJogos/total-war-warhammer.jpg",
       "description": "Comanda exércitos fantásticos em batalhas épicas no universo Warhammer Fantasy.",
       "featured": false
     }
