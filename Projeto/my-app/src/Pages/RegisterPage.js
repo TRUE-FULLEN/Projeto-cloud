@@ -3,10 +3,27 @@ import { useNavigate } from 'react-router-dom';
 
 function RegisterPage() {
   const [signupData, setSignupData] = useState({ name: '', email: '', password: '' });
+  const [erro, setErro] = useState('');
   const navigate = useNavigate();
 
   function handleSignup(e) {
     e.preventDefault();
+
+    // Vai buscar os utilizadores já guardados (ou array vazio se não existir)
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+
+    // Verifica se o email já está registado
+    const exists = users.find(u => u.email === signupData.email);
+    if (exists) {
+      setErro('Este email já está registado.');
+      return;
+    }
+
+    // Adiciona o novo utilizador à lista e guarda
+    users.push(signupData);
+    localStorage.setItem('users', JSON.stringify(users));
+
+    // Vai para o login
     navigate('/login');
   }
 
@@ -17,6 +34,11 @@ function RegisterPage() {
           <div className="card bg-dark text-white border-secondary">
             <div className="card-body p-4">
               <h4 className="mb-4">Criar conta</h4>
+
+              {erro && (
+                <div className="alert alert-danger">{erro}</div>
+              )}
+
               <form onSubmit={handleSignup}>
                 <div className="mb-3">
                   <label className="form-label">Nome</label>
