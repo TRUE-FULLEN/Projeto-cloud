@@ -3,60 +3,110 @@ import { useState, createContext } from "react";
 export const AppContext = createContext();
 
 function AppProvider({ children }) {
-  const [cart, setCart] = useState([]);
-  const [favorites, setFavorites] = useState([]);
   const [loggedUser, setLoggedUser] = useState(() => {
     return JSON.parse(localStorage.getItem('loggedUser'));
   });
 
+  const [cart, setCart] = useState(() => {
+    const user = JSON.parse(localStorage.getItem('loggedUser'));
+    if (user) {
+      return JSON.parse(localStorage.getItem(`cart_${user.email}`)) || [];
+    }
+    return [];
+  });
+
+  const [favorites, setFavorites] = useState(() => {
+    const user = JSON.parse(localStorage.getItem('loggedUser'));
+    if (user) {
+      return JSON.parse(localStorage.getItem(`favorites_${user.email}`)) || [];
+    }
+    return [];
+  });
+
   function addToCart(game) {
     const exists = cart.find(item => item.id === game.id);
+    let newCart;
     if (exists) {
-      setCart(cart.map(item =>
+      newCart = cart.map(item =>
         item.id === game.id ? { ...item, quantity: item.quantity + 1 } : item
-      ));
+      );
     } else {
-      setCart([...cart, { ...game, quantity: 1 }]);
+      newCart = [...cart, { ...game, quantity: 1 }];
+    }
+    setCart(newCart);
+    if (loggedUser) {
+      localStorage.setItem(`cart_${loggedUser.email}`, JSON.stringify(newCart));
     }
   }
 
   function removeFromCart(id) {
-    setCart(cart.filter(item => item.id !== id));
+    const newCart = cart.filter(item => item.id !== id);
+    setCart(newCart);
+    if (loggedUser) {
+      localStorage.setItem(`cart_${loggedUser.email}`, JSON.stringify(newCart));
+    }
   }
 
   function updateQuantity(id, quantity) {
     if (quantity <= 0) {
       removeFromCart(id);
     } else {
-      setCart(cart.map(item =>
+      const newCart = cart.map(item =>
         item.id === id ? { ...item, quantity: quantity } : item
-      ));
+      );
+      setCart(newCart);
+      if (loggedUser) {
+        localStorage.setItem(`cart_${loggedUser.email}`, JSON.stringify(newCart));
+      }
     }
   }
 
   function addToFavorites(game) {
     const exists = favorites.find(item => item.id === game.id);
     if (!exists) {
-      setFavorites([...favorites, game]);
+      const newFavorites = [...favorites, game];
+      setFavorites(newFavorites);
+      if (loggedUser) {
+        localStorage.setItem(`favorites_${loggedUser.email}`, JSON.stringify(newFavorites));
+      }
     }
   }
 
   function removeFromFavorites(id) {
-    setFavorites(favorites.filter(item => item.id !== id));
+    const newFavorites = favorites.filter(item => item.id !== id);
+    setFavorites(newFavorites);
+    if (loggedUser) {
+      localStorage.setItem(`favorites_${loggedUser.email}`, JSON.stringify(newFavorites));
+    }
   }
 
   function login(user) {
     localStorage.setItem('loggedUser', JSON.stringify(user));
     setLoggedUser(user);
+
+    // Carregar carrinho e favoritos do utilizador
+    const savedCart = JSON.parse(localStorage.getItem(`cart_${user.email}`)) || [];
+    const savedFavorites = JSON.parse(localStorage.getItem(`favorites_${user.email}`)) || [];
+    setCart(savedCart);
+    setFavorites(savedFavorites);
   }
 
   function logout() {
     localStorage.removeItem('loggedUser');
     setLoggedUser(null);
+
+    // Limpar carrinho e favoritos da sessão
+    setCart([]);
+    setFavorites([]);
   }
 
   return (
-    <AppContext.Provider value={{ cart, favorites, addToCart, removeFromCart, updateQuantity, addToFavorites, removeFromFavorites, loggedUser, login, logout }}>
+    <AppContext.Provider value={{
+      cart, favorites, loggedUser,
+      addToCart, removeFromCart, updateQuantity,
+      addToFavorites, removeFromFavorites,
+      login, logout
+    }}>
       {children}
     </AppContext.Provider>
   );
