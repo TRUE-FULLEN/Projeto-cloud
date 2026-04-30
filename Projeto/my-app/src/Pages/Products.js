@@ -9,7 +9,7 @@ function Products() {
   const [platform, setPlatform] = useState('');
   const [sortBy, setSortBy] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const gamesPerPage = 8;
+  const gamesPerPage = 9;
 
   const location = useLocation();
   const searchParam = new URLSearchParams(location.search).get('search') || '';
