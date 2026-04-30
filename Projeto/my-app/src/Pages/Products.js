@@ -6,7 +6,7 @@ function Products() {
   const [games, setGames] = useState([]);
   const [filteredGames, setFilteredGames] = useState([]);
   const [genre, setGenre] = useState('');
-  const [platform, setPlatform] = useState('PC');
+  const [platform, setPlatform] = useState('');
   const [sortBy, setSortBy] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const gamesPerPage = 8;
