@@ -11,8 +11,8 @@ function Home() {
     fetch('http://localhost:3030/games')
       .then(response => response.json())
       .then(data => {
-        const destaque = data.filter(game => game.featured === true);
-        setFeaturedGames(destaque);
+        const top8 = data.sort((a, b) => b.rating - a.rating).slice(0, 8);
+        setFeaturedGames(top8);
       })
       .catch(error => console.error('Erro ao carregar jogos:', error));
   }, []);
