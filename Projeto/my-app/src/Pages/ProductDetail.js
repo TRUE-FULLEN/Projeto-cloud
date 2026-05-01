@@ -2,14 +2,17 @@ import { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 import GameCard from '../componentes/GameCard';
+import { Container, Row, Col, Badge, Button, Image } from 'react-bootstrap';
 
 function ProductDetail() {
   const { id } = useParams();
   const [game, setGame] = useState(null);
   const [similarGames, setSimilarGames] = useState([]);
-  const { addToCart, addToFavorites, favorites } = useContext(AppContext);
+  
+  const { addToCart, addToFavorites, removeFromFavorites, favorites } = useContext(AppContext);
 
-  const isFavorite = favorites.find(item => item.id === parseInt(id));
+  // A CORREÇÃO ESTÁ AQUI: Convertemos ambos para String para garantir correspondência exata
+  const isFavorite = favorites.find(item => String(item.id) === String(id));
 
   useEffect(() => {
     fetch(`http://localhost:3030/games/${id}`)
@@ -19,7 +22,8 @@ function ProductDetail() {
         fetch(`http://localhost:3030/games?genre=${data.genre}`)
           .then(res => res.json())
           .then(similar => {
-            const filtered = similar.filter(g => g.id !== data.id).slice(0, 4);
+            // Ajustado aqui também por precaução com os IDs
+            const filtered = similar.filter(g => String(g.id) !== String(data.id)).slice(0, 4);
             setSimilarGames(filtered);
           });
       })
@@ -29,76 +33,74 @@ function ProductDetail() {
   function renderStars(rating) {
     let stars = '';
     for (let i = 0; i < 5; i++) {
-      if (i < rating) {
-        stars += '★';
-      } else {
-        stars += '☆';
-      }
+      stars += i < rating ? '★' : '☆';
     }
     return stars;
   }
 
   if (!game) {
     return (
-      <div className="container my-5 text-white text-center">
+      <Container className="my-5 text-white text-center">
         <p>A carregar...</p>
-      </div>
+      </Container>
     );
   }
 
   return (
-    <div className="container my-5">
-      <div className="row g-4">
+    <Container className="my-5">
+      <Row className="g-4">
         {/* Imagem */}
-        <div className="col-12 col-md-5">
-          <img
+        <Col xs={12} md={5}>
+          <Image
             src={game.image}
             alt={game.title}
-            className="img-fluid rounded"
+            fluid
+            rounded
             style={{ width: '100%' }}
           />
-        </div>
+        </Col>
 
         {/* Detalhes */}
-        <div className="col-12 col-md-7 text-white">
-          <span className="badge bg-secondary mb-2">{game.genre}</span>
+        <Col xs={12} md={7} className="text-white">
+          <Badge bg="secondary" className="mb-2">{game.genre}</Badge>
           <h1>{game.title}</h1>
-          <p className="stars fs-4">{renderStars(game.rating)}</p>
+          <p className="text-warning fs-4 mb-2">{renderStars(game.rating)}</p>
           <p>{game.description}</p>
           <p className="text-secondary">Plataforma: {game.platform}</p>
           <h3 className="text-info">{game.price}€</h3>
 
           <div className="d-flex gap-3 mt-3 flex-wrap">
-            <button
-              className="btn btn-primary"
+            <Button
+              variant="primary"
               onClick={() => addToCart(game)}
             >
               🛒 Adicionar ao Carrinho
-            </button>
-            <button
-              className={`btn ${isFavorite ? 'btn-danger' : 'btn-outline-danger'}`}
-              onClick={() => addToFavorites(game)}
+            </Button>
+            
+            <Button
+              variant={isFavorite ? 'danger' : 'outline-danger'}
+              onClick={() => isFavorite ? removeFromFavorites(game.id) : addToFavorites(game)}
             >
-              ❤️ {isFavorite ? 'Nos Favoritos' : 'Adicionar aos Favoritos'}
-            </button>
+              ❤️ {isFavorite ? 'Remover dos Favoritos' : 'Adicionar aos Favoritos'}
+            </Button>
           </div>
-        </div>
-      </div>
+        </Col>
+      </Row>
 
       {/* Jogos Similares */}
       {similarGames.length > 0 && (
         <div className="mt-5">
           <h3 className="text-white mb-4">Jogos Similares</h3>
-          <div className="row g-4">
+          <Row className="g-4">
             {similarGames.map(g => (
-              <div className="col-12 col-md-6 col-lg-3" key={g.id}>
+              <Col xs={12} md={6} lg={3} key={g.id}>
                 <GameCard game={g} />
-              </div>
+              </Col>
             ))}
-          </div>
+          </Row>
         </div>
       )}
-    </div>
+    </Container>
   );
 }
 

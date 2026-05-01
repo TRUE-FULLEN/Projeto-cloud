@@ -9,21 +9,17 @@ function RegisterPage() {
   function handleSignup(e) {
     e.preventDefault();
 
-    // Vai buscar os utilizadores já guardados (ou array vazio se não existir)
     const users = JSON.parse(localStorage.getItem('users')) || [];
 
-    // Verifica se o email já está registado
     const exists = users.find(u => u.email === signupData.email);
     if (exists) {
       setErro('Este email já está registado.');
       return;
     }
 
-    // Adiciona o novo utilizador à lista e guarda
     users.push(signupData);
     localStorage.setItem('users', JSON.stringify(users));
 
-    // Vai para o login
     navigate('/login');
   }
 
