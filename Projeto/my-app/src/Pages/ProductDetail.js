@@ -11,7 +11,6 @@ function ProductDetail() {
   
   const { addToCart, addToFavorites, removeFromFavorites, favorites } = useContext(AppContext);
 
-  // A CORREÇÃO ESTÁ AQUI: Convertemos ambos para String para garantir correspondência exata
   const isFavorite = favorites.find(item => String(item.id) === String(id));
 
   useEffect(() => {
@@ -22,7 +21,6 @@ function ProductDetail() {
         fetch(`http://localhost:3030/games?genre=${data.genre}`)
           .then(res => res.json())
           .then(similar => {
-            // Ajustado aqui também por precaução com os IDs
             const filtered = similar.filter(g => String(g.id) !== String(data.id)).slice(0, 4);
             setSimilarGames(filtered);
           });
@@ -49,7 +47,6 @@ function ProductDetail() {
   return (
     <Container className="my-5">
       <Row className="g-4">
-        {/* Imagem */}
         <Col xs={12} md={5}>
           <Image
             src={game.image}
@@ -60,7 +57,6 @@ function ProductDetail() {
           />
         </Col>
 
-        {/* Detalhes */}
         <Col xs={12} md={7} className="text-white">
           <Badge bg="secondary" className="mb-2">{game.genre}</Badge>
           <h1>{game.title}</h1>
@@ -87,7 +83,6 @@ function ProductDetail() {
         </Col>
       </Row>
 
-      {/* Jogos Similares */}
       {similarGames.length > 0 && (
         <div className="mt-5">
           <h3 className="text-white mb-4">Jogos Similares</h3>

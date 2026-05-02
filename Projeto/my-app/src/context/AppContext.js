@@ -84,7 +84,6 @@ function AppProvider({ children }) {
     localStorage.setItem('loggedUser', JSON.stringify(user));
     setLoggedUser(user);
 
-    // Carregar carrinho e favoritos do utilizador
     const savedCart = JSON.parse(localStorage.getItem(`cart_${user.email}`)) || [];
     const savedFavorites = JSON.parse(localStorage.getItem(`favorites_${user.email}`)) || [];
     setCart(savedCart);
@@ -95,7 +94,6 @@ function AppProvider({ children }) {
     localStorage.removeItem('loggedUser');
     setLoggedUser(null);
 
-    // Limpar carrinho e favoritos da sessão
     setCart([]);
     setFavorites([]);
   }

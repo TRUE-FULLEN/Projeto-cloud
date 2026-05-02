@@ -26,7 +26,6 @@ function Home() {
 
   return (
     <div>
-      {/* Secção Hero */}
       <div className="hero text-white text-center">
         <div className="container">
           <h1 className="display-4 fw-bold">🎮 Feira do Jogo</h1>
@@ -46,7 +45,6 @@ function Home() {
         </div>
       </div>
 
-      {/* Jogos em Destaque */}
       <div className="container my-5">
         <h2 className="text-white mb-4">⭐ Jogos em Destaque</h2>
         <div className="row g-4">

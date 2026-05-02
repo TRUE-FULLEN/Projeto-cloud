@@ -107,7 +107,6 @@ function Products() {
         )}
       </div>
 
-      {/* Grelha de Jogos */}
       <div className="row g-4">
         {currentGames.length > 0 ? (
           currentGames.map(game => (
@@ -120,7 +119,6 @@ function Products() {
         )}
       </div>
 
-      {/* Paginação */}
       {totalPages > 1 && (
         <div className="d-flex justify-content-center mt-4">
           <nav>
