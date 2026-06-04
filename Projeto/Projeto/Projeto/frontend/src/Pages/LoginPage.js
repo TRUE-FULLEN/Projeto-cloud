@@ -3,27 +3,34 @@ import { useNavigate } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 
 function LoginPage() {
-  const [loginData, setLoginData] = useState({ email: '', password: '' });
+  const [loginData, setLoginData] = useState({ name: '', password: '' });
   const [erro, setErro] = useState('');
   const navigate = useNavigate();
   const { login } = useContext(AppContext);
 
-  function handleLogin(e) {
+  async function handleLogin(e) {
     e.preventDefault();
 
-    const users = JSON.parse(localStorage.getItem('users')) || [];
+    try {
+      const response = await fetch('http://localhost:5000/api/v1/user/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(loginData)
+      });
 
-    const user = users.find(
-      u => u.email === loginData.email && u.password === loginData.password
-    );
+      const data = await response.json();
 
-    if (!user) {
-      setErro('Email ou password incorretos.');
-      return;
+      if (!response.ok) {
+        setErro(data.error);
+        return;
+      }
+
+      login(data.user);
+      navigate('/');
+
+    } catch (error) {
+      setErro('Erro ao conectar com o servidor.');
     }
-
-    login(user);
-    navigate('/');
   }
 
   return (
@@ -34,19 +41,17 @@ function LoginPage() {
             <div className="card-body p-4">
               <h4 className="mb-4">Entrar na conta</h4>
 
-              {erro && (
-                <div className="alert alert-danger">{erro}</div>
-              )}
+              {erro && <div className="alert alert-danger">{erro}</div>}
 
               <form onSubmit={handleLogin}>
                 <div className="mb-3">
-                  <label className="form-label">Email</label>
+                  <label className="form-label">Nome</label>
                   <input
-                    type="email"
+                    type="text"
                     className="form-control bg-dark text-white border-secondary"
-                    placeholder="email@exemplo.com"
-                    value={loginData.email}
-                    onChange={(e) => setLoginData({ ...loginData, email: e.target.value })}
+                    placeholder="O teu nome"
+                    value={loginData.name}
+                    onChange={(e) => setLoginData({ ...loginData, name: e.target.value })}
                     required
                   />
                 </div>

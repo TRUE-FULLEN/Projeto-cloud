@@ -14,11 +14,11 @@ function ProductDetail() {
   const isFavorite = favorites.find(item => String(item.id) === String(id));
 
   useEffect(() => {
-    fetch(`http://localhost:3030/games/${id}`)
+    fetch(`http://localhost:5000/api/v1/products/${id}`)
       .then(response => response.json())
       .then(data => {
         setGame(data);
-        fetch(`http://localhost:3030/games?genre=${data.genre}`)
+        fetch(`http://localhost:5000/api/v1/products/categorias/${data.genre}`)
           .then(res => res.json())
           .then(similar => {
             const filtered = similar.filter(g => String(g.id) !== String(data.id)).slice(0, 4);

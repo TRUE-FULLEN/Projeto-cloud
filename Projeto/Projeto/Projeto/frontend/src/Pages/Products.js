@@ -15,7 +15,7 @@ function Products() {
   const searchParam = new URLSearchParams(location.search).get('search') || '';
 
   useEffect(() => {
-    fetch('http://localhost:3030/games')
+    fetch('http://localhost:5000/api/v1/products?page=1&limit=100')
       .then(response => response.json())
       .then(data => {
         setGames(data);

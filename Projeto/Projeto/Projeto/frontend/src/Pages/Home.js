@@ -8,7 +8,7 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:3030/games')
+    fetch('http://localhost:5000/api/v1/products?page=1&limit=100')
       .then(response => response.json())
       .then(data => {
         const top8 = data.sort((a, b) => b.rating - a.rating).slice(0, 8);

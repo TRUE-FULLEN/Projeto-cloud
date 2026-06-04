@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .house_card{
+            width: 200px;
+            background-color: white;
+            overflow: hidden;
+            border-radius: 5px;
+            border: solid 1px rgba(0,0,0,.1)
+        }
+        h3 {margin:0;}
+
+        .house_image{
+            margin: auto;
+            height: 200px;
+            background-image: url("images/apartment.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .house_details{
+            padding: 20px;
+        }     
+
+        .location{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+        .icons{
+            display: flex;
+            padding: 15px 0;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .more_info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        p {margin: 0;}
+        nav {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+   <div class = "house_card">
+        <div class="house_image"></div>
+
+        <div class="house_details">
+            <h3>Vila de Sesimbra</h3>
+            <div class="location">
+                <img height="20px" src="images/location.png">
+                <p>Sesimbra, Portugal</p>
+            </div>
+            
+            <p>Casa Top chucha</p>
+            <div class="icons">
+                <img height="20px" src="images/bathroom.png">
+                <img height="20px" src="images/dining.png">
+                <img height="20px" src="images/fridge.png">
+                <img height="20px" src="images/surface.png">
+            </div>      
+        </div>
+        <div class="more_info">
+            <nav>
+                <div class="price">
+                    <p>Price</p>
+                    <p>1000€</p>
+                </div>
+            </nav>
+        </div>
+
+         
+
+   </div> 
+</body>
+</html>

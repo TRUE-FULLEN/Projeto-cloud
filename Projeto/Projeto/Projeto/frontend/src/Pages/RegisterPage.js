@@ -4,23 +4,32 @@ import { useNavigate } from 'react-router-dom';
 function RegisterPage() {
   const [signupData, setSignupData] = useState({ name: '', email: '', password: '' });
   const [erro, setErro] = useState('');
+  const [sucesso, setSucesso] = useState('');
   const navigate = useNavigate();
 
-  function handleSignup(e) {
+  async function handleSignup(e) {
     e.preventDefault();
 
-    const users = JSON.parse(localStorage.getItem('users')) || [];
+    try {
+      const response = await fetch('http://localhost:5000/api/v1/user/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(signupData)
+      });
 
-    const exists = users.find(u => u.email === signupData.email);
-    if (exists) {
-      setErro('Este email já está registado.');
-      return;
+      const data = await response.json();
+
+      if (!response.ok) {
+        setErro(data.error);
+        return;
+      }
+
+      setSucesso('Conta criada! Aguarda confirmação do admin para fazer login.');
+      setTimeout(() => navigate('/login'), 3000);
+
+    } catch (error) {
+      setErro('Erro ao conectar com o servidor.');
     }
-
-    users.push(signupData);
-    localStorage.setItem('users', JSON.stringify(users));
-
-    navigate('/login');
   }
 
   return (
@@ -31,9 +40,8 @@ function RegisterPage() {
             <div className="card-body p-4">
               <h4 className="mb-4">Criar conta</h4>
 
-              {erro && (
-                <div className="alert alert-danger">{erro}</div>
-              )}
+              {erro && <div className="alert alert-danger">{erro}</div>}
+              {sucesso && <div className="alert alert-success">{sucesso}</div>}
 
               <form onSubmit={handleSignup}>
                 <div className="mb-3">
